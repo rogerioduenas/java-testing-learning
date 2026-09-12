@@ -29,6 +29,47 @@ The goal is to develop the discipline to write clean, maintainable, and expressi
 
 ---
 
+## 🏋🏻 Exercises
+
+In addition to the article-based modules, this repository includes a dedicated set of practical exercises focused on applying unit testing to existing implementations.
+
+This module contains [**10 exercises**](https://github.com/rogerioduenas/java-testing-learning/tree/main/src/main/java/com/rogerio/exercises), and each exercise follows the same structure:
+
+- An initial implementation containing the complete solution, but without input validation or error handling
+- A `README` describing the requirements and expected behavior
+- A dedicated test package containing unit tests designed to protect and cover the implementation
+
+The purpose of each exercise is not simply to write tests for already-correct code. The implementation must first be **analyzed and refactored** so that it behaves correctly under the scenarios defined by the tests.
+
+This means identifying missing validations, handling invalid inputs and exceptional scenarios, improving the implementation where necessary, and ensuring that the final code satisfies the complete test suite.
+
+The exercises therefore provide a practical workflow that combines:
+
+```text
+Existing Implementation
+          │
+          ▼
+Understand Requirements
+          │
+          ▼
+Identify Missing Validations
+          │
+          ▼
+Refactor Implementation
+          │
+          ▼
+Implement & Run Tests
+          │
+          ▼
+Correct, Tested & Protected Code
+
+```
+Each exercise is intentionally structured to simulate a common development scenario: working with an existing codebase, understanding its expected behavior, identifying weaknesses, and using automated tests to guide the refactoring process.
+
+The goal is to strengthen not only the ability to write unit tests, but also the ability to adapt and improve production code so that it becomes testable, reliable, and properly protected against regressions.
+
+---
+
 ## 🧩 Project Structure
 
 The project follows a modular structure where each directory corresponds to a specific technical topic:
