@@ -33,7 +33,7 @@ The goal is to develop the discipline to write clean, maintainable, and expressi
 
 In addition to the article-based modules, this repository includes a dedicated set of practical exercises focused on applying unit testing to existing implementations.
 
-This module contains [**10 exercises**](https://github.com/rogerioduenas/java-testing-learning/tree/main/src/main/java/com/rogerio/exercises), and each exercise follows the same structure:
+This module contains [**10 exercises**](./src/main/java/com/rogerio/exercises), and each exercise follows the same structure:
 
 - An initial implementation containing the complete solution, but without input validation or error handling
 - A `README` describing the requirements and expected behavior
@@ -97,30 +97,30 @@ Each `article_xx_*` folder is self-contained, containing domain models, services
 ## 🗺️ Learning Path
 
 | # | Article / Topic | Core Concepts Covered | Status |
-|---:|---|---|:---:|
-| 01 | Introduction | Framework Setup, Basic Lifecycle, Assumptions | ✅ Completed |
-| 02 | Assertions | `assertAll`, `assertArrayEquals`, `assertTimeout`, `linesMatch` | ✅ Completed |
-| 03 | Assert Exceptions | `assertThrows`, Specific Exception Verification | ✅ Completed |
-| 04 | Before / After | `@BeforeEach`, `@AfterEach`, `@BeforeAll`, `@AfterAll` | ✅ Completed |
-| 05 | Test Execution Order | `@TestMethodOrder`, `@TestClassOrder`, Custom Orderers | ✅ Completed |
-| 06 | Inject Parameters | `ParameterResolver`, `@ExtendWith`, Custom Extensions | ✅ Completed |
-| 07 | Repeated Tests | `@RepeatedTest`, `RepetitionInfo`, `FailureThreshold` | ✅ Completed |
-| 08 | Dynamic Tests | `@TestFactory`, `DynamicTest`, Stream Generation | ✅ Completed |
-| 09 | Resource Path | Reading Test Resources via `ClassLoader` & NIO `Path` | ✅ Completed |
-| 10 | Mockito Extension | `MockitoExtension`, Parameter Injection in Tests | ✅ Completed |
-| 11 | Mock Injection | `@Mock`, `@Spy`, `@Captor`, `@InjectMocks` | ✅ Completed |
-| 12 | When / Then | Behavior Configuration (`when().thenReturn()`) | ✅ Completed |
-| 13 | Argument Matchers | `eq()`, `argThat()`, Custom Matchers, Varargs | ✅ Completed |
-| 14 | Exception Throwing | `thenThrow()`, `doThrow()`, Exception Stubbing | ✅ Completed |
-| 15 | Verification | `verify()`, `verifyNoInteractions()`, In-Order Verification | ✅ Completed |
-| 16 | Void Methods | `doNothing()`, `doAnswer()`, `doCallRealMethod()` | ✅ Completed |
-| 17 | Lambdas & Optionals | Matching Optionals, Streams, Custom Answers via Lambdas | ✅ Completed |
-| 18 | BDDMockito | BDD Syntax (`given()`, `willReturn()`, `then()`) | ✅ Completed |
-| 19 | Strict Stubbing | `@MockitoSettings`, `lenient()`, `UnnecessaryStubbingException` | ✅ Completed |
-| 20 | Argument Captor | `ArgumentCaptor`, Parameter Inspection & State Verification | ✅ Completed |
-| 21 | Spy Behaviors | Partial Mocking, Real Method Execution, `doReturn()` vs `when()` | ✅ Completed |
-| 22 | Static Methods | `mockStatic()`, `MockedStatic`, Thread Registration | ✅ Completed |
-| 23 | Abstract Classes | Mocking Abstract Classes using `CALLS_REAL_METHODS` | ✅ Completed |
+| :---: | :--- | :--- | :---: |
+| 01 | [Introduction](src/test/java/com/rogerio/article_01_introduction) | Framework Setup, Basic Lifecycle, Assumptions | ✅ Completed |
+| 02 | [Assertions](src/test/java/com/rogerio/article_02_assertions) | `assertAll`, `assertArrayEquals`, `assertTimeout`, `linesMatch` | ✅ Completed |
+| 03 | [Assert Exceptions](src/test/java/com/rogerio/article_03_assert_exceptions) | `assertThrows`, Specific Exception Verification | ✅ Completed |
+| 04 | [Before / After](src/test/java/com/rogerio/article_04_before_after) | `@BeforeEach`, `@AfterEach`, `@BeforeAll`, `@AfterAll` | ✅ Completed |
+| 05 | [Test Execution Order](src/test/java/com/rogerio/article_05_order_of_tests) | `@TestMethodOrder`, `@TestClassOrder`, Custom Orderers | ✅ Completed |
+| 06 | [Inject Parameters](src/test/java/com/rogerio/article_06_inject_parameters) | `ParameterResolver`, `@ExtendWith`, Custom Extensions | ✅ Completed |
+| 07 | [Repeated Tests](src/test/java/com/rogerio/article_07_repeated_test) | `@RepeatedTest`, `RepetitionInfo`, `FailureThreshold` | ✅ Completed |
+| 08 | [Dynamic Tests](src/test/java/com/rogerio/article_08_dynamic_tests) | `@TestFactory`, `DynamicTest`, Stream Generation | ✅ Completed |
+| 09 | [Resource Path](src/test/java/com/rogerio/article_09_get_path_of_resources_directory) | Reading Test Resources via `ClassLoader` & NIO `Path` | ✅ Completed |
+| 10 | [Mockito Extension](src/test/java/com/rogerio/article_10_mockito_using_extendWith) | `MockitoExtension`, Parameter Injection in Tests | ✅ Completed |
+| 11 | [Mock Injection](src/test/java/com/rogerio/article_11_mock_spy_captor_injectMocks) | `@Mock`, `@Spy`, `@Captor`, `@InjectMocks` | ✅ Completed |
+| 12 | [When / Then](src/test/java/com/rogerio/article_12_when_then) | Behavior Configuration (`when().thenReturn()`) | ✅ Completed |
+| 13 | [Argument Matchers](src/test/java/com/rogerio/article_13_argument_matchers) | `eq()`, `argThat()`, Custom Matchers, Varargs | ✅ Completed |
+| 14 | [Exception Throwing](src/test/java/com/rogerio/article_14_exception_throwing) | `thenThrow()`, `doThrow()`, Exception Stubbing | ✅ Completed |
+| 15 | [Verification](src/test/java/com/rogerio/article_15_verify) | `verify()`, `verifyNoInteractions()`, In-Order Verification | ✅ Completed |
+| 16 | [Void Methods](src/test/java/com/rogerio/article_16_void_methods) | `doNothing()`, `doAnswer()`, `doCallRealMethod()` | ✅ Completed |
+| 17 | [Lambdas & Optionals](src/test/java/com/rogerio/article_17_support_for_optional_streams_lambda) | Matching Optionals, Streams, Custom Answers via Lambdas | ✅ Completed |
+| 18 | [BDDMockito](src/test/java/com/rogerio/article_18_BDDMockito) | BDD Syntax (`given()`, `willReturn()`, `then()`) | ✅ Completed |
+| 19 | [Strict Stubbing](src/test/java/com/rogerio/article_19_strict_stubbing) | `@MockitoSettings`, `lenient()`, `UnnecessaryStubbingException` | ✅ Completed |
+| 20 | [Argument Captor](src/test/java/com/rogerio/article_20_argument_captor) | `ArgumentCaptor`, Parameter Inspection & State Verification | ✅ Completed |
+| 21 | [Spy Behaviors](src/test/java/com/rogerio/article_21_spy) | Partial Mocking, Real Method Execution, `doReturn()` vs `when()` | ✅ Completed |
+| 22 | [Static Methods](src/test/java/com/rogerio/article_22_static_methods) | `mockStatic()`, `MockedStatic`, Thread Registration | ✅ Completed |
+| 23 | [Abstract Classes](src/test/java/com/rogerio/article_23_abstract_class) | Mocking Abstract Classes using `CALLS_REAL_METHODS` | ✅ Completed |
 
 ---
 
